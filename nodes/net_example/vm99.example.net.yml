@@ -1,0 +1,9 @@
+---
+classes:
+  - host.net_example_vm99
+  - app.nginx
+
+parameters:
+  # fqdn: ${hostname}.${hostdomain} see classes/projects/any.yml
+  hostname: 'vm99'
+  hostdomain: 'example.net'

@@ -1,0 +1,13 @@
+---
+classes:
+# the virtualized guests first
+  - host.net_example_vm99
+# the current node last
+  - host.net_example_kvm42
+
+parameters:
+  # fqdn: ${hostname}.${hostdomain} see classes/projects/any.yml
+  hostname: "kvm42"
+  hostdomain: 'example.net'
+
+
