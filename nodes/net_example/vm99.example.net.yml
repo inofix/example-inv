@@ -1,7 +1,7 @@
 ---
 classes:
   - host.net_example_vm99
-  - projects.any
+  - project.any
   - app.nginx
 
 parameters:
