@@ -1,0 +1,37 @@
+classes:
+  - host.Host_ch_inofix_kvm42
+  - os.debian_stretch
+  - manager.maestro
+
+parameters:
+  host:
+    resource:
+      vm99:
+        arch: 'amd64'
+        cpu:
+          cores: '2'
+        default_password: 'f00b4r'
+        disk:
+          - name: 'system'
+            meta:
+              pool: 'pool'
+            path: '/dev/vda'
+            size: '22G'
+            system: true
+        domainname: 'example.net'
+        mem:
+          size: '512'
+        net:
+          - name: 'eth0'
+            ip: '192.168.1.99'
+            netmask: '255.255.255.0'
+            gateway: '192.168.1.1'
+            nameserver: '8.8.8.8'
+            primary: true
+        os:
+          os: 'linux'
+          distro: 'debian'
+          codename: 'stretch'
+          variant: 'debianwheezy'
+        type: 'vm'
+

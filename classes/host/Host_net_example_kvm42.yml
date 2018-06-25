@@ -1,0 +1,9 @@
+---
+classes:
+  - location.CH
+  - host.KVM
+
+parameters:
+  host__hypervisor: 'kvm42.example.net'
+  host__infrastructure: '${host__hypervisor} ${host__virt-type}'
+

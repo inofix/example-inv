@@ -1,0 +1,52 @@
+---
+parameters:
+  host:
+    virt:
+      admins:
+        - "me@example.net"
+      connect: 'qemu:///system'
+      display:
+        graphics: 'spice'
+        video: 'qxl'
+      install_console: 'console=ttyS0,115200n8'
+      network: 'bridge=brprivate'
+      mode: 'hvm'
+      storage:
+        images:
+          bus: "virtio"
+          cache: "default"
+          default_size: "10G"
+          format: "qcow2"
+          pool: "images"
+          path: "/var/lib/libvirt/images"
+          type: "qemu-image"
+        pool:
+          bus: "virtio"
+          cache: "default"
+          default-size: "2T"
+          pool: "pool"
+          volume_group: "vg_pool"
+          path: "/dev/vg_pool"
+          type: "lvm"
+      type: 'kvm'
+    resource:
+      kvm42:
+        arch: 'amd64'
+        cpu:
+          cores: '24'
+        mem:
+          size: '32768'
+        disk:
+          - name: 'sda'
+            family: 'Foobar (SATA 6Gb/s)'
+            model: 'FB42'
+            serial: 'FB-42'
+            type: 'physical'
+            path: '/dev/sda'
+        net:
+          - name: 'lo'
+          - name: 'private'
+            ip: '192.168.1.1'
+            netmask: '255.255.255.0'
+        type: 'phy'
+
