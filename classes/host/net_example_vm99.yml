@@ -1,7 +1,6 @@
 classes:
-  - host.Host_ch_inofix_kvm42
+  - host.Host_net_example_kvm42
   - os.debian_stretch
-  - manager.maestro
 
 parameters:
   host:
