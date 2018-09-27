@@ -49,7 +49,7 @@ parameters:
             ip: '192.168.1.1'
             netmask: '255.255.255.0'
         net_route:
-        net_filter:
+        net_filter_v4:
           - remotehost: False
             table:
             chain:

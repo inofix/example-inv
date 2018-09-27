@@ -28,7 +28,7 @@ parameters:
             nameserver: '8.8.8.8'
             primary: true
         net_route:
-        net_filter:
+        net_filter_v4:
           - remotehost: False
             table:
             chain:
