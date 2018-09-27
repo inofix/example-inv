@@ -27,6 +27,17 @@ parameters:
             gateway: '192.168.1.1'
             nameserver: '8.8.8.8'
             primary: true
+        net_route:
+        net_filter:
+          - remotehost: False
+            table:
+            chain:
+            protocol:
+            source:
+            destination:
+            match:
+            state:
+    target:
         os:
           os: 'linux'
           distro: 'debian'
