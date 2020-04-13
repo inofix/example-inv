@@ -1,10 +1,11 @@
 ---
 classes:
 # the virtualized guests first
-  - host.net_example_vm99
+  - host.net_example_vm99    # ressources to provide for a guest
+  - host.KVM_host
 # the current node last
-  - host.net_example_kvm42
-  - project.any
+  - host.net_example_kvm42   # this hosts ressources
+  - project.any              # an example project
 
 parameters:
   # fqdn: ${hostname}.${hostdomain} see classes/projects/any.yml

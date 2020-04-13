@@ -1,5 +1,4 @@
 classes:
-  - host.Host_net_example_kvm42
   - os.debian_stretch
 
 parameters:

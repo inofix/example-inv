@@ -1,8 +1,9 @@
 ---
 classes:
-  - host.net_example_vm99
-  - project.any
-  - app.nginx
+  - host.Host_net_example_kvm42  # this nodes host
+  - host.net_example_vm99        # this nodes ressources
+  - project.any                  # an example project
+  - app.nginx                    # a software reference
 
 parameters:
   # fqdn: ${hostname}.${hostdomain} see classes/projects/any.yml
