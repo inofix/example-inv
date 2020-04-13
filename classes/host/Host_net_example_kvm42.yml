@@ -1,7 +1,7 @@
 ---
 classes:
   - location.CH
-  - host.KVM
+  - host.KVM_guest
 
 parameters:
   host__hypervisor: 'kvm42.example.net'
